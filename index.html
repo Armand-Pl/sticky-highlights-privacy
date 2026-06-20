@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Privacy Policy — Sticky Highlights</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 {
+    font-size: 28px;
+    margin-bottom: 4px;
+  }
+  .updated {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    font-size: 19px;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 8px;
+  }
+  p, li {
+    font-size: 15.5px;
+  }
+  ul {
+    padding-left: 22px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 8px 10px;
+    border: 1px solid #e5e5e5;
+    vertical-align: top;
+  }
+  th {
+    background: #fafafa;
+    font-weight: 600;
+  }
+  code {
+    background: #f3f3f1;
+    padding: 1px 6px;
+    border-radius: 4px;
+    font-size: 13.5px;
+  }
+  .callout {
+    background: #FFF9E6;
+    border: 1px solid #FFE066;
+    border-radius: 8px;
+    padding: 14px 16px;
+    margin: 20px 0;
+    font-size: 14.5px;
+  }
+  a {
+    color: #185FA5;
+  }
+  footer {
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e5e5;
+    font-size: 13.5px;
+    color: #777;
+  }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for Sticky Highlights</h1>
+<div class="updated">Last updated: June 20, 2026</div>
+
+<p>Sticky Highlights ("the extension", "we", "us") is a Chrome browser extension that lets you highlight, annotate, and save passages of text on webpages. This policy explains what data the extension handles, how it is stored, and what control you have over it.</p>
+
+<p>We have written this policy to describe exactly what the extension does today. If that changes — for example if we add an optional cloud sync feature — we will update this policy first and tell you about it inside the extension. See the "Future changes" section below for details.</p>
+
+<h2>What data the extension collects</h2>
+<p>When you select text on a webpage and choose to highlight it, the extension stores:</p>
+<ul>
+  <li>The highlighted text itself</li>
+  <li>Any note or tags you choose to add to that highlight</li>
+  <li>The color you assigned to the highlight</li>
+  <li>The URL and title of the page the highlight was made on</li>
+  <li>The date and time the highlight was created</li>
+</ul>
+<p>The extension also stores your own configuration choices, so they persist between browser sessions:</p>
+<ul>
+  <li>The list of websites you have enabled or disabled (your whitelist or blacklist)</li>
+  <li>Your default highlight color</li>
+  <li>Your custom Markdown export templates, if you have changed them from the default</li>
+</ul>
+<p>We do not collect any data beyond what is listed above. We do not collect your browsing history, your identity, analytics about your usage, or any data from websites you have not explicitly chosen to enable the extension on.</p>
+
+<h2>How your data is stored</h2>
+<div class="callout">
+  <strong>As of this version, all data stays on your device.</strong> The extension uses Chrome's built-in local storage (<code>chrome.storage.local</code>) only. There is no remote server, no account, and no login. Nothing is transmitted over the internet by the extension.
+</div>
+<p>This means:</p>
+<ul>
+  <li>Your highlights are only accessible from the Chrome profile where you created them</li>
+  <li>If you use Chrome on another device, your highlights will not appear there unless Chrome's own bookmark/profile sync is enabled at the operating system level (which is a Google Chrome feature, not something this extension controls)</li>
+  <li>Uninstalling the extension permanently deletes all locally stored data</li>
+</ul>
+
+<h2>Data we never collect</h2>
+<p>We do not, under any circumstance:</p>
+<ul>
+  <li>Sell your data to any third party</li>
+  <li>Share your data with advertisers or data brokers</li>
+  <li>Use your data for personalized advertising</li>
+  <li>Track your browsing activity on sites where the extension is not enabled</li>
+  <li>Run any analytics, telemetry, or crash-reporting service</li>
+  <li>Load any third-party script or tracking pixel inside the extension</li>
+</ul>
+
+<h2>Why the extension requests the permissions it does</h2>
+<table>
+  <tr><th>Permission</th><th>Why it's needed</th></tr>
+  <tr><td><code>storage</code></td><td>To save your highlights, notes, tags, and settings locally on your device.</td></tr>
+  <tr><td><code>activeTab</code> / <code>tabs</code></td><td>To detect which page you're on, so the extension can show your highlights for that specific page and let you reopen the page from the side panel.</td></tr>
+  <tr><td><code>scripting</code></td><td>To inject the highlighting tool into pages you have enabled.</td></tr>
+  <tr><td><code>host_permissions (all sites)</code></td><td>The extension can only be used on sites you explicitly add to your whitelist (or, if you switch modes, sites not on your blacklist). This broad permission exists so the extension can work on whichever site you personally choose — it is never active by default, and never reads or modifies any page unless you have enabled it.</td></tr>
+  <tr><td><code>sidePanel</code></td><td>To display the panel where you browse, search, and manage your highlights.</td></tr>
+  <tr><td><code>commands</code></td><td>To support the optional keyboard shortcuts for highlighting and opening the panel.</td></tr>
+  <tr><td><code>alarms</code></td><td>Used internally to keep the extension responsive; not used to collect or transmit any data.</td></tr>
+</table>
+
+<h2>Exporting your highlights</h2>
+<p>The extension lets you export your highlights as Markdown, JSON, or CSV files. These files are generated and downloaded directly to your own device by your browser. We never see, receive, or have access to any exported file — the export happens entirely locally.</p>
+
+<h2>Your control over your data</h2>
+<ul>
+  <li>You can delete any individual highlight at any time from the side panel</li>
+  <li>You can delete all of your highlights at once from Settings → Danger zone → Delete all highlights</li>
+  <li>You can remove a site from your whitelist (or add it to your blacklist) at any time, which immediately stops the extension from running on that site</li>
+  <li>Uninstalling the extension removes all of its stored data from your browser</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>Sticky Highlights is not directed at children under 13, and we do not knowingly collect data from children under 13.</p>
+
+<h2>Future changes — cloud sync</h2>
+<p>We are considering adding an optional cloud sync feature in a future version, so that highlights can be backed up and accessed across devices. If and when this is introduced:</p>
+<ul>
+  <li>It will be clearly presented as an optional, opt-in feature — never enabled automatically</li>
+  <li>This privacy policy will be updated <em>before</em> the feature is released, to disclose exactly what data would be sent, to which service, and how it is secured</li>
+  <li>You will be able to use the extension exactly as it works today, fully locally, without ever activating sync</li>
+</ul>
+
+<h2>Changes to this policy</h2>
+<p>If we make changes to this policy, we will update the "Last updated" date at the top of this page. We encourage you to review this page periodically.</p>
+
+<h2>Contact</h2>
+<p>If you have any question about this policy or how the extension handles your data, contact us at <a href="mailto:stickyhighlights@outlook.com">stickyhighlights@outlook.com</a>.</p>
+
+<footer>
+  Sticky Highlights — Chrome Extension Privacy Policy
+</footer>
+
+</body>
+</html>
