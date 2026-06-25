@@ -84,7 +84,7 @@
 <body>
 
 <h1>Privacy Policy for Sticky Highlights</h1>
-<div class="updated">Last updated: June 20, 2026</div>
+<div class="updated">Last updated: June 24, 2026</div>
 
 <p>Sticky Highlights ("the extension", "we", "us") is a Chrome browser extension that lets you highlight, annotate, and save passages of text on webpages. This policy explains what data the extension handles, how it is stored, and what control you have over it.</p>
 
@@ -134,8 +134,7 @@
   <tr><th>Permission</th><th>Why it's needed</th></tr>
   <tr><td><code>storage</code></td><td>To save your highlights, notes, tags, and settings locally on your device.</td></tr>
   <tr><td><code>activeTab</code> / <code>tabs</code></td><td>To detect which page you're on, so the extension can show your highlights for that specific page and let you reopen the page from the side panel.</td></tr>
-  <tr><td><code>scripting</code></td><td>To inject the highlighting tool into pages you have enabled.</td></tr>
-  <tr><td><code>host_permissions (all sites)</code></td><td>The extension can only be used on sites you explicitly add to your whitelist (or, if you switch modes, sites not on your blacklist). This broad permission exists so the extension can work on whichever site you personally choose — it is never active by default, and never reads or modifies any page unless you have enabled it.</td></tr>
+  <tr><td><code>host_permissions (all sites)</code></td><td>The extension's core function is letting you highlight and save text on any website you choose to read or research on, which requires the ability to run on any site. To limit exposure, the extension only activates on sites within your chosen scope — configurable as a whitelist of enabled sites or a blacklist of excluded sites in Settings. It never reads or modifies a page outside that scope, and is never active by default on first install.</td></tr>
   <tr><td><code>sidePanel</code></td><td>To display the panel where you browse, search, and manage your highlights.</td></tr>
   <tr><td><code>commands</code></td><td>To support the optional keyboard shortcuts for highlighting and opening the panel.</td></tr>
   <tr><td><code>alarms</code></td><td>Used internally to keep the extension responsive; not used to collect or transmit any data.</td></tr>
